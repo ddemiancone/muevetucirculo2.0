@@ -4,6 +4,7 @@ window.onload = function() {
 
 	// IDENTIFICATIONS
 
+		const allButtons = document.querySelectorAll('.button')
 		const buttonUp = document.querySelector('.button-up')
 		const buttonLeftUp = document.querySelector('.button-up-left')
 		const buttonRightUp = document.querySelector('.button-up-right')
@@ -14,6 +15,7 @@ window.onload = function() {
 		const buttonRightDown = document.querySelector('.button-down-right')
 		const buttonRandom = document.querySelector('.button-random')
 		const buttonStopRandom = document.querySelector('.button-stop-random')
+		const colorPad = document.querySelector('.colorPad')
 		const colorToRed = document.querySelector('.color-red')
 		const colorToGreen = document.querySelector('.color-green')
 		const colorToBlue = document.querySelector('.color-blue')
@@ -52,6 +54,8 @@ window.onload = function() {
 		function setRandomColor()	{
 			const randomColor = getRandomColor()
 			circle.style.background = randomColor
+			buttonRandom.style.background = randomColor
+			colorPad.classList.add('bouncePad')
 		}		
 
 		function randomMovement() {

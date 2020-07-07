@@ -122,6 +122,26 @@ img {
 	position: absolute;
 }
 
+.bouncePad {
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	0% {
+		bottom: 10px;
+	}
+
+	50% {
+		bottom: 30px;
+	}
+
+	100% {
+		bottom: 10px;
+	}
+}
+
 .color {
 	border-radius: 100%;
 	width: 40px;
