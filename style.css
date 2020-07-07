@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.container {
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.circle {
+	border-radius: 100%;
+  background: red;
+  transition: 0.2s linear;
+  width: 100px;
+  height: 100px;
+  top: auto;
+  left: auto;
+  position: absolute;
+  box-shadow: 0 3px 6px black;
+	overflow: hidden;
+}
+
+.buttons {
+	top: 10;
+	right: 10;
+	position: absolute;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+	height: 160px;
+}
+
+.top-row, .center-row, .bottom-row, .stop-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	width: 30px;
+	height: 30px;
+	color: white;
+	background: black;
+	margin: 3px;
+	border: 0;
+	outline: none;
+	border-radius: 5px;
+	word-break: break-all;
+	cursor: pointer;
+}
+
+.button-left {
+	transform: rotate(90deg);
+}
+
+.button-right {
+	transform: rotate(-90deg);
+}
+
+.button-random {
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+}
+
+.button-stop-random {
+	width: 140px;
+	height: 35px;
+	border-radius: 10px;
+	font-size: 12px;
+	font-family: Roboto Slab;
+	margin-top: 10px;
+	visibility: hidden;
+}
+
+img {
+	width: 15px;
+	height: 15px;
+}
+
+.button-up {
+	transform: rotate(180deg);
+}
+
+.button-up-left {
+	transform: rotate(140deg);
+  border-radius: 100%;
+}
+
+.button-up-right {
+	transform: rotate(-140deg);
+  border-radius: 100%;
+}
+
+.button-down-left {
+	transform: rotate(-320deg);
+  border-radius: 100%;
+}
+
+.button-down-right {
+	transform: rotate(320deg);
+  border-radius: 100%;
+}
+
+.colorPad {
+	display: flex;
+	width: 160px;
+	height: 90px;
+	bottom: 10px;
+	right: 20px;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+.color {
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	box-shadow: 0 3px 3px black;
+	overflow: visible;
+	cursor: pointer;
+}
+
+.color-red {
+	background: red;
+}
+
+.color-green {
+	background: green;
+}
+
+.color-blue {
+	background: blue;
+}
+
+
+
+/* alerts */
+
+.swal2-popup {
+	position: absolute;
+}
+
+.swal2-title, .swal2-html-container {
+	font-family: 'Roboto Slab';
+}
+
+.swal2-title {
+	font-size: 40px;
+}
+
+.swal2-html-container {
+	font-size: 28px;
+}

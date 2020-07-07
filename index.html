@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Mueve tu círculo</title>
+		<meta charset="utf-8">		
+		<link rel="shortcut icon" type="image/x-icon" href="images/button.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="utils.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="buttons">
+				<div class="top-row">
+					<button class="button button-up-left">v</button>
+					<button class="button button-up">v</button>
+					<button class="button button-up-right">v</button>	
+				</div>
+				<div class="center-row">
+					<button class="button button-left">v</button>
+					<button class="button button-random">
+						<img src="images/random.png" title="Activar modo aleatorio">
+					</button>
+					<button class="button button-right">v</button>
+				</div>
+				<div class="bottom-row">
+					<button class="button button-down-left">v</button>
+					<button class="button button-down">v</button>
+					<button class="button button-down-right">v</button>
+				</div>
+				<div class="stop-row">	
+					<button class="button button-stop-random">Parar modo aleatorio</button>
+				</div>
+			</div>
+
+			<div class="circle"></div>
+
+			<div class="music">
+				<audio>
+					<source src="music/remix.mpeg" type="audio/mpeg">
+				</audio>
+			</div>
+						
+			<div class="colorPad">
+				<div class="color color-red"></div>
+				<div class="color color-green"></div>
+				<div class="color color-blue"></div>
+			</div>
+
+		</div>
+	</body>
+</html>
