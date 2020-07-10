@@ -55,7 +55,6 @@ window.onload = function() {
 			const randomColor = getRandomColor()
 			circle.style.background = randomColor
 			buttonRandom.style.background = randomColor
-			colorPad.classList.add('bouncePad')
 		}		
 
 		function randomMovement() {
@@ -106,6 +105,8 @@ window.onload = function() {
 			music.play()
 			setInterval(randomMovement, 300)
 			setInterval(setRandomColor, 200)
+			colorPad.classList.add('bouncePad')
+			setRandomColor()
 		}
 
 		buttonStopRandom.onclick = function() {
@@ -192,25 +193,25 @@ window.onload = function() {
 
 			if (circleX <= 0) {
 				container.style = 'box-shadow: inset 0 0 0 5px red'
-				setRandomColor()
+				circle.style.background = getRandomColor()
 				circle.style.top = 30
 			}
 
 			else if (circleX >= height) {
 				container.style = 'box-shadow: inset 0 0 0 5px red'
-				setRandomColor()
+				circle.style.background = getRandomColor()
 				circle.style.top = height - 140
 			}
 
 			else if (circleY <= 0) {
 				container.style = 'box-shadow: inset 0 0 0 5px red'
-				setRandomColor()
+				circle.style.background = getRandomColor()
 				circle.style.left = 30
 			}
 
 			else if (circleY >= width) {
 				container.style = 'box-shadow: inset 0 0 0 5px red'
-				setRandomColor()
+				circle.style.background = getRandomColor()
 				circle.style.left = width - 120
 			}
 
